@@ -46,16 +46,12 @@ of those sections to manage the look and feel of the site. */
     padding-top: 150px;
 }
 
-.icon-image-intro {
-
-}
-
 .intro-section {
     background: #fff url('/img/1.jpg') no-repeat scroll center top;
 }
 
 .second-section {
-    background: #fff url('img/2.jpg');
+    background: #fff url('/img/2.jpg');
 }
 
 .third-section {
