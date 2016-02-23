@@ -47,27 +47,37 @@ of those sections to manage the look and feel of the site. */
 
     
 #intro-section {
-    background: #fff url('/img/1.jpg') no-repeat scroll center top;
+    padding-top: 150px;
+    background: #fff url('/img/1.jpg') no-repeat;
     background-size: cover;
+    height: 100%;
 }
 #second-section {
-    background: #fff url('/img/2.jpg');
+    background: #fff url('/img/2.jpg') no-repeat;
     padding-top: 50px;
     height: 170%;
-    background-repeat:no-repeat;
     background-size: cover;
 }
 
 #third-section {
+    padding-top: 150px;
+    height: 100%;
     background: #fff url('/img/3.jpg') no-repeat;
     background-size: cover;
 
 }
 
 #fourth-section {
-    background: #fff url('/img/4.jpg');
+    padding-top: 50px;
+    height: 100%;
+    background: #fff url('/img/4.jpg') no-repeat;
+    background-size: cover;
 }
 
 #fifth-section {
-    background: #fff url('/img/5.jpg');
+    padding-top: 50px;
+    background: #fff url('/img/5.jpg') no-repeat;
+    background-size: cover;
+    height: 100%;
+
 }
