@@ -33,35 +33,41 @@ The padding is very important to make sure the scrollspy picks up the right area
 of those sections to manage the look and feel of the site. */
 
 
-#intro-section,
-#second-section,
-#third-section,
-#fourth-section,
-#fifth-section {
+.intro-section,
+.second-section,
+.third-section,
+.fourth-section,
+.fifth-section {
     height: 100%;
     background-repeat:no-repeat;
-    background-size: 100%;
-    /*background-position: 0% 20%;*/
+    background-size: cover;
     text-align: center;
     padding-top: 150px;
 }
 
-.intro-section {
+    
+#intro-section {
     background: #fff url('/img/1.jpg') no-repeat scroll center top;
+    background-size: cover;
 }
-
-.second-section {
+#second-section {
     background: #fff url('/img/2.jpg');
+    padding-top: 50px;
+    height: 170%;
+    background-repeat:no-repeat;
+    background-size: cover;
 }
 
-.third-section {
-    background: #fff url('/img/3.jpg');
+#third-section {
+    background: #fff url('/img/3.jpg') no-repeat;
+    background-size: cover;
+
 }
 
-.fourth-section {
+#fourth-section {
     background: #fff url('/img/4.jpg');
 }
 
-.fifth-section {
+#fifth-section {
     background: #fff url('/img/5.jpg');
 }
