@@ -33,7 +33,13 @@ of those sections to manage the look and feel of the site. */
 
 .first-jumbotron {
     padding: 20px;
-    max-height: 90%;
+    color: #fff4f2;
+    background-color: rgba(43, 42, 43, 0.8);
+    border-color: #e9e6e8;
+
+}
+.first-jumbotron hr {
+  border-top-color: #b5aaaa;
 }
 
 .second-jumbotron {
@@ -44,7 +50,7 @@ of those sections to manage the look and feel of the site. */
 .fifth-jumbotron {
     padding: 0px;
     max-height: 90%;
-
+    background: rgba(230, 230, 230, 0.7);
 }
 .intro-section,
 .second-section,
@@ -54,11 +60,32 @@ of those sections to manage the look and feel of the site. */
     text-align: center;
 }
 
+/*#goshka h1{
+    color:#fff;
+    text-align: center;
+    padding-top: 230px;
+    font-size: 100px;
+}
+#goshka h3{
+    color: #fff;
+    font-size: 23px;
+}
+#dark {
+    background-color: rgba(0,0,0,0.7);
+}
+*/
+
+#Vladska {
+    background-color: rgba(0,0,0,0);
+    min-height: 780px;
+}
 #intro-section {
     padding-top: 100px;
     background: #fff url('/img/1.jpg') no-repeat;
+    background-color: rgba(0,0,0,0);
     background-size: cover;
     height: 100%;
+    background-attachment: fixed;
 }
 #second-section {
     background: #fff url('/img/2.jpg') no-repeat;
