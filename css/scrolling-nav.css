@@ -31,14 +31,14 @@ html {
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
 of those sections to manage the look and feel of the site. */
 
-.first-jumbotron {
+.cool-jumbotron {
     padding: 20px;
     color: #fff4f2;
     background-color: rgba(43, 42, 43, 0.8);
     border-color: #e9e6e8;
 
 }
-.first-jumbotron hr {
+.cool-jumbotron hr {
   border-top-color: #b5aaaa;
 }
 
