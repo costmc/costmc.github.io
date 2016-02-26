@@ -32,15 +32,19 @@ The padding is very important to make sure the scrollspy picks up the right area
 of those sections to manage the look and feel of the site. */
 
 .first-jumbotron {
-    padding: 15px;
+    padding: 20px;
+    max-height: 90%;
 }
 
 .second-jumbotron {
     padding: 15px;
+    max-height: 90%;
 }
 
 .fifth-jumbotron {
     padding: 0px;
+    max-height: 90%;
+
 }
 .intro-section,
 .second-section,
