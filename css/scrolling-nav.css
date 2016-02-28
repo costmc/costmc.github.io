@@ -1,5 +1,5 @@
 /*!
- * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
+ * Based on Scrolling Nav HTML Template (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
@@ -35,7 +35,7 @@ of those sections to manage the look and feel of the site. */
   border-color: #faebcc;
   color: #8a6d3b;
   background-color: #fcf8e3;
-  padding: 5px;
+  padding: 5px; /*HM*/
 }
 .my-panel-1 > .panel-heading {
   color: #8a6d3b;
@@ -59,11 +59,31 @@ of those sections to manage the look and feel of the site. */
 
 
 .my-panel-2 {
-  padding: 5px;
+  padding: 5px; /*HM*/
   border-color: #fff;
   color: #fff;
   background-color: rgba(117, 59, 33, 0.84);  
 }
+
+.my-panel-2 > .panel-heading {
+/*  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;*/
+}
+.my-panel-2 > .panel-heading + .panel-collapse > .panel-body {
+/*  border-top-color: #faebcc;*/
+}
+.my-panel-2 > .panel-heading .badge {
+/*  color: #fcf8e3;
+  background-color: #8a6d3b;*/
+}
+.my-panel-2 > .panel-footer + .panel-collapse > .panel-body {
+/*  border-bottom-color: #faebcc;
+*/}
+
+.my-panel-2 hr {
+/*  border-top-color: #f7e1b5;
+*/}
 
 .cool-jumbotron {
     padding: 20px;
@@ -107,7 +127,6 @@ of those sections to manage the look and feel of the site. */
     background: #fff url('/img/1.jpg') no-repeat;
     background-color: rgba(0,0,0,0);
     background-size: cover;
-/*    height: 100%;*/
     background-attachment: fixed;
 }
 #second-section {
