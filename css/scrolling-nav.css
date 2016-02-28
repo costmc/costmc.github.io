@@ -76,7 +76,7 @@ of those sections to manage the look and feel of the site. */
   border-top-color: #b5aaaa;
 }
 
-.fifth-jumbotron {
+.sixth-jumbotron {
     padding: 0px;
     max-height: 90%;
     background: rgba(230, 230, 230, 0.7);
@@ -85,19 +85,22 @@ of those sections to manage the look and feel of the site. */
 .second-section,
 .third-section,
 .fourth-section,
-.fifth-section {
+.fifth-section,
+.sixth-section {
     text-align: center;
 }
 
-/*
-#dark {
+.dark {
     background-color: rgba(0,0,0,0.7);
 }
-*/
 
-#Vladska {
+#white-header {
+    color: #fff;
+}
+
+.no-colour {
     background-color: rgba(0,0,0,0);
-    min-height: 780px;
+    min-height: 780px;    
 }
 #intro-section {
     padding-top: 100px;
@@ -122,14 +125,20 @@ of those sections to manage the look and feel of the site. */
 
 }
 
-#fourth-section {
+#fourth-section{
+    height: 80%;
+    background: #fff url('/img/4.jpg') no-repeat;
+    background-size: cover;   
+}
+
+#fifth-section {
     padding-top: 50px;
     height: 100%;
     background: #fff url('/img/4.jpg') no-repeat;
     background-size: cover;
 }
 
-#fifth-section {
+#sixth-section {
     padding-top: 50px;
     background: #fff url('/img/5.jpg') no-repeat;
     background-size: cover;
