@@ -159,6 +159,10 @@ body > footer {
     margin: 3em auto;
 }
 
+body > footer a {
+    color: #aaa;
+}
+
 body > footer li:last-child {
     margin-right: 0;
 }
