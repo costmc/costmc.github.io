@@ -88,7 +88,7 @@ body > header h1 a, body > header h1 a:hover {
 
 h2 {
     font-size: 1.3em;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 
@@ -114,7 +114,7 @@ h4 {
 }
 
 a {
-    color: #0881b3;
+    color: #41C8FF;
     text-decoration: none;
     border-bottom: 1px solid transparent;
 }
@@ -133,7 +133,8 @@ a:hover {
 body {
     color: #FFF;
     font-size: 22px;
-    font-family: "Whitney A", "Whitney B";
+/*    font-family: "Whitney A", "Whitney B";*/
+    font-family: "SanFrancisco";
     font-weight: 400;
     line-height: 1.5em;
     padding: 0 10px;
@@ -168,7 +169,7 @@ body > header {
 
 body > footer {
     color: #aaa;
-    text-shadow: #fff 0 1px 0;
+/*    text-shadow: #fff 0 1px 0;*/
     font-size: 0.8em;
     text-align: center;
     margin: 3em auto;
