@@ -58,12 +58,18 @@ p {
     margin: 0 0 1.5em;
 }
 
-h1 {
+h1.shadowed {
     color: #000;
     margin-bottom: 0.5em;
     font-family: 'Landmark Dimensional A', 'Landmark Dimensional B';
     font-weight: 400;
     text-transform: capitalize;
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 0.5em;
+    font-weight: 400;
 }
 
 /*mobile*/
