@@ -59,11 +59,13 @@ p {
 }
 
 h1.main-shadowed {
-    color: #000;
+    color: #fff;
     margin-bottom: 0.5em;
     font-family: 'Landmark Dimensional A', 'Landmark Dimensional B';
     font-weight: 400;
     text-transform: capitalize;
+    background-color:;
+    line-height: 150%;
 }
 
 h1 {
@@ -174,6 +176,26 @@ body > header {
 
 }
 
+.heroimage{
+    max-width: 600px;
+    padding-bottom: 2em;
+}
+
+/*mobile*/
+@media (max-width: 992px) {
+    .heroimage {
+    max-width: 20em;
+    }
+}
+
+@media (max-width: 330px) {
+    .heroimage {
+    max-width: 11em;
+    }
+}
+
+
+
 /*mobile*/
 /*@media (max-width: 992px) {
     header {
@@ -195,7 +217,6 @@ body > header {
 
 body > footer {
     color: #aaa;
-/*    text-shadow: #fff 0 1px 0;*/
     font-size: 0.8em;
     text-align: center;
     margin: 3em auto;
