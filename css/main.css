@@ -56,16 +56,15 @@ html {
 
 p {
     margin: 0 0 1.5em;
+		font-weight: 200;
+		font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 h1.main-shadowed {
     color: #fff;
     margin-bottom: 0.0em;
-    font-family: 'Landmark Dimensional A', 'Landmark Dimensional B';
     font-weight: 400;
-    text-transform: capitalize;
-    background-color:;
-    line-height: 150%;
+    line-height: 100%;
 }
 
 h1 {
@@ -99,7 +98,7 @@ body > header h1 a, body > header h1 a:hover {
 }
 
 header > p {
-    font-family: "SanFrancisco", Helvetica, Arial;
+    font-family: "SanFrancisco", Helvetica, Arial, sans-serif;
 }
 
 h2 {
@@ -175,8 +174,6 @@ section, header, footer, nav, article, aside, figure {
 
 body > header {
     color: #949494;
-    margin: 4em auto;
-
 }
 
 .heroimage{
