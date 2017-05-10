@@ -1,0 +1,12 @@
+# sources
+src/
+
+# dependencies
+node_modules/
+
+# misc
+.DS_store
+.idea
+
+# log
+npm-debug.log
