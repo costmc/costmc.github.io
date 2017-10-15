@@ -1,5 +1,7 @@
 # sources
-src/
+# source/
+#.scss
+# .twig
 
 # dependencies
 node_modules/
