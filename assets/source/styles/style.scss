@@ -1,0 +1,57 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "core/variables";
+
+/* Color palette */
+
+/* Text styles */
+
+@font-face {
+	font-family: 'Druk Wide';
+	src: url('../fonts/druk/DrukWideCyTTHeavy.eot');
+	src: url('../fonts/druk/DrukWideCyTTHeavy.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/druk/DrukWideCyTTHeavy.woff') format('woff'),
+		url('../fonts/druk/DrukWideCyTTHeavy.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Druk Text Wide';
+	src: url('../fonts/druk/DrukTextWideCyTTHeavy.eot');
+	src: url('../fonts/druk/DrukTextWideCyTTHeavy.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/druk/DrukTextWideCyTTHeavy.woff') format('woff'),
+		url('../fonts/druk/DrukTextWideCyTTHeavy.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+/* Element styles */
+
+a {
+	color: $black;
+	text-decoration: underline;
+}
+
+/* Section styles */
+
+html, body {
+
+}
+
+#main {
+	h1.display-4 {
+		font-family: "Druk Wide";
+		@include media-breakpoint-down(md) {
+			font-size: 2.5em;
+			font-family: "Druk Text Wide";
+		}
+		@include media-breakpoint-down(xs) {
+			font-size: 1.3em;
+		}
+	}
+	@include media-breakpoint-down (xs) {
+		.nav-link {
+		padding: .5em .2em;
+		}
+	}
+}

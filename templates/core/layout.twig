@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang={{ lang | default("ru") }}>
+<head>
+  <title>{{ title | default("Hi") }}</title>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+
+  <meta property="og:title" content="Content Title">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://example.com/image.jpg">
+  <meta property="og:url" content="https://example.com/page.html">
+  <meta property="og:description" content="Description">
+  <meta property="og:site_name" content="Site name">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="article:author" content="">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Заголовок">
+  <meta name="twitter:description" content="Описание.">
+  <meta name="twitter:image:src" content="http://example.com/img.jpg">
+  <meta name="twitter:url" content="http://example.com/page.html">
+  <meta name="twitter:domain" content="example.com">
+  <meta name="twitter:site" content="@">
+  <meta name="twitter:creator" content="@...">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- <script src="assets/js/scripts.js" async></script> -->
+
+
+</head>
+<body class="d-flex flex-column align-self-stretch px-md-5 py-md-4 px-2 py-2" id="main">
+  {% block body %}
+  {% endblock %}
+
+</body>
+</html>
