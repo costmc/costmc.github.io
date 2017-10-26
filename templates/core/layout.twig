@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1" name="viewport">
 
-  <meta property="og:title" content="Content Title">
+  <meta property="og:title" content="Влад Мд Голам">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://example.com/image.jpg">
   <meta property="og:url" content="https://example.com/page.html">
@@ -24,13 +24,28 @@
   <meta name="twitter:creator" content="@...">
 
   <link href="assets/css/style.css" rel="stylesheet">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5NRHPPQ');</script>
+  <!-- End Google Tag Manager -->
+
+  <link rel="manifest" href="manifest.json">
   <!-- <script src="assets/js/scripts.js" async></script> -->
-
-
 </head>
-<body class="d-flex flex-column align-self-stretch px-md-5 py-md-4 px-2 py-2" id="main">
+<body class="px-md-5 py-md-4 px-2 py-2" id="main">
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5NRHPPQ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
   {% block body %}
   {% endblock %}
+
+  <!-- нужны новые джикваери -->
 
 </body>
 </html>

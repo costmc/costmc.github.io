@@ -1,0 +1,9 @@
+{
+  "name": "personal website",
+  "short_name": "mdgolam.me",
+  "start_url": "/index.html?launcher=true",
+  "theme_color": "#cd040c",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "orientation": "portrait"
+}
