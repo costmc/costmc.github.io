@@ -6,62 +6,68 @@
 @import "node_modules/bootstrap/scss/type";
 @import "node_modules/bootstrap/scss/grid";
 @import "node_modules/bootstrap/scss/nav";
-// @import "node_modules/bootstrap/scss/transitions";
 @import "node_modules/bootstrap/scss/utilities";
-
-// @import "node_modules/bootstrap/scss/bootstrap";
 
 @import "core/fonts";
 
-/* Color palette */
-
-/* Text styles */
-
-
-/* Element styles */
-
 a {
-	border-bottom-width: 1px;
-	border-bottom-color: opacity($link-color, 20);
-	border-bottom-style: solid;
-	transition-duration: .33s;
-	transition-timing-function: ease-out;
-	trantition-property: all;
-	&:hover {
+	transition: all .33s ease-out;
+	fill: $link-color;
+	border-bottom-color: rgba($link-color, 50);
+	&:hover, &.hover, &.nav-link:hover {
 		transition: none;
-		border-bottom-color: $link-hover-color;
+		fill: $link-hover-color;
+		border-bottom-color: rgba($link-hover-color, 30);
+	}
+	u, &.nav-link, &.full {
+		border-bottom-width: 1px;
+		fill: inherit;
+		border-bottom-style: solid;
+		text-decoration: none;
+	}
+	svg {
+		height: 1em;
+		width: auto;
+		transition: none;
+		fill: inherit;
+	}
+	span {
+		font-size: 1.2rem;
 	}
 }
 
+h1.display-4 {
+	line-height: 1;
+	font-size: 4.5vw;
+	font-family: "Graphik LCG";
+	font-weight: 700;
+	@include media-breakpoint-down(sm) {
+		font-size: 6vw;
+	}
+}
 
-/* Section styles */
+div.namer {
+	font-weight: 600;
+	font-family: "Druk Text Wide Medium";
+}
 
 #main {
-	h1.display-4 {
-		// color: rgba(255, 56, 51, 0.14);
-		line-height: 1.2;
-		font-family: "Druk Text Wide";
-		@include media-breakpoint-up(xl) {
-		}
-		@include media-breakpoint-up(lg) {
-		}
-		@include media-breakpoint-up(md) {
-		}
+	.col.category {
+		// overflow: ellipsis;
+		// white-space: nowrap;
 		@include media-breakpoint-up(sm) {
-			font-size: 4.5vw;
-			white-space: nowrap;
 		}
-		@include media-breakpoint-up(xs) {
-			font-size: 1.5em;
-			white-space: normal;
+	}
+	.nav {
+		@include media-breakpoint-down(xs) {
+		}
+		.nav-link {
+			padding-bottom: 0;
+			@include media-breakpoint-down (xs) {
+					padding: .5em .5em 0 .5em;
+					font-size: .9rem;
+			}
 		}
 	}
 	
-	.nav-link {
-		// padding: 0;
-		// margin: .5em 1em 0 1em;
-		@include media-breakpoint-down (xs) {
-			margin: 0 .2em;
-		}
-	}
 }

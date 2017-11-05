@@ -1,67 +1,96 @@
 <div class="container-fluid">
-	<div class="row flex-column align-items-start">
-		<div class="nav w-100">
-			<a class="nav-link pl-0 ml-0" href="https://t.me/mdgolam">телеграм</a>
+	<div class="row flex-column align-items-center">
+		<div class="nav px-3">
+			<a class="nav-link pl-0" href="https://t.me/mdgolam">телеграм</a>
 			<a class="nav-link" href="https://twitter.com/vladmdgolam">твиттер</a>
 			<a class="nav-link" href="https://instagr.am/vladmdgolam">инстаграм</a>
 			<a class="nav-link" href="https://facebook.com/vladmdgolam">ФБ</a>
-			<a class="nav-link" href="https://vk.com/vladmdgolam">ВК</a>
-			<a class="nav-link ml-auto" href="https://vk.com/vladmdgolam">EN</a>
+			<a class="nav-link pr-0" href="https://vk.com/vladmdgolam">ВК</a>
+			<!-- <a class="nav-link ml-auto px-0" href="https://vk.com/vladmdgolam">EN</a> -->
 		</div>
 
 		<h1 class="py-4 display-4">
-		Меня зовут Влад&nbsp;Мд&nbsp;Голам,<br>
-		я&nbsp;дизайню и&nbsp;запускаю сайты<br>
-		и&nbsp;мобильные приложения
+		Меня зовут Влад&nbsp;Мд&nbsp;Голам,<br>я дизайню и воплощаю<br>сайты и фирменные стили.
 		</h1>
 
 		<div class="lead">
-			<div class="d-flex">
-				<div class="w-25">
+			<div class="d-flex align-items-center">
+				<div class="w-25 text-right namer">
 					веду
 				</div>
-				<div class="col-md flex-column">
+				<div class="col ml-auto category">
 					<div>
-						Канал <a href="https://t.me/moveablefeast">«Праздник, который всегда с&nbsp;тобой»</a>
+						<a href="https://t.me/moveablefeast" class="">
+							{% include 'telegram.twig' %}
+							Канал
+							«<u>Праздник, который ...</u>»
+						</a>
 					</div>
 					<div>
-						Блог <a href="https://blog.mdgolam.me">«О духовном в&nbsp;искусстве»</a>
+						<a href="http://blog.mdgolam.me">
+							{% include 'aegea.twig' %}
+							Блог
+							«<u>О духовном в&nbsp;искусстве</u>»
+						</a>
 					</div>
 					<div>
-						<a href="https://itunes.apple.com/ru/playlist/a-2017/idpl.5e70cf4962d6451cb00127fc094eb339">Плейлист</a> в  Музыке
+						<a href="https://itunes.apple.com/ru/playlist/a-2017/idpl.5e70cf4962d6451cb00127fc094eb339">
+							<span></span> <u>Плейлист</u>
+						</a>
+					</div>
+					<!-- <div>
+						<a href="https://mdgolam.vsco.co">
+						{% include 'vsco.twig' %}
+						<u>Фотоленту</u></a> 
+					</div> -->
+				</div>
+			</div>
+
+			<div class="d-flex pt-5 align-items-center">
+				<div class="w-25 text-right namer">
+					пишу
+				</div>
+				<div class="col ml-auto category">
+					<div>
+						<a class="full" href="http://blog.mdgolam.me/all/protests-in-russia">Протесты в&nbsp;России</a>
 					</div>
 					<div>
-						<a href="https://costmc.vsco.co">Фотоленту</a> ВСКО
+						<a class="full" href="https://readymag.com/vlad/metaphysics/">Метафора и&nbsp;мечта: метафизическая живопись</a>
+					</div>
+					<div>
+						<a class="full" href="https://readymag.com/vlad/braque/">Жорж Брак. Визуальное исследование</a>
+					</div>
+					<div>
+						<a class="full" href="https://readymag.com/vlad/modernist-fonts/">Шрифты модернизма</a>
 					</div>
 				</div>
 			</div>
 
-			<div class="d-flex pt-5">
-				<div class="w-25">
-					2017
+			<div class="d-flex pt-5 align-items-center">
+				<div class="w-25 text-right namer">
+					проекты
 				</div>
-				<div class="col-md flex-column">
-					<div><a href="https://blog.mdgolam.me/all/protests-in-russia">Протесты в&nbsp;России</a></div>
-					<div><a href="https://readymag.com/vlad/metaphysics/">Метафора и&nbsp;мечта: метафизическая живопись</a></div>
-					<div><a href="https://readymag.com/vlad/braque/">Жорж Брак. Визуальное исследование</a></div>
-					<div><a href="https://readymag.com/vlad/modernist-fonts/">Шрифты модернизма</a></div>
+				<div class="col ml-auto category">
+					<div>
+						<a class="full" href="http://360elements.mdgolam.me">
+						Структурные продукты 
+					</a>
+					</div>
+					<div>
+						<a class="full" href="http://capoeira.mdgolam.me/">
+						Занятия капоэирой
+						</a>
+					</div>
+					<div>
+						<a class="full" href="http://godrepair.mdgolam.me/">
+						Сервис «Godrepair»
+					</a>
+					</div>
 				</div>
 			</div>
 		</div>
-
-		<!-- h3>Об искусстве</h3>
-		<a href="https://readymag.com/vlad/metaphysics/">
-			Метафора и мечта: метафизическая живопись
-		</a>
-		<a href="https://readymag.com/vlad/braque/">
-			Жорж Брак. Визуальное исследование
-		</a>
-		<a href="https://readymag.com/vlad/modernist-fonts/">
-			Шрифты модернизма
-		</a> -->
-		<!-- <div class="fixed-bottom mx-auto"> -->
-		<p class="pt-5 mb-0 small">2016...2017</p>
-		<a class="small" href="mailto:costmc@me.com">costmc@me.com</a>
+		<p class="pt-4 mb-0 small">2016...2017 Влад Мд Голам</p>
+		<a class="full small" href="mailto:costmc@me.com">costmc@me.com</a>
 		</div>
 	</div>
 </div>

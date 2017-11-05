@@ -9,6 +9,17 @@
 }
 
 @font-face {
+	font-family: 'Druk Text Wide Bold';
+	src: url('../fonts/Druk Text Wide Bold/DrukTextWideCyTTBold.eot');
+	src: url('../fonts/Druk Text Wide Bold/DrukTextWideCyTTBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Druk Text Wide Bold/DrukTextWideCyTTBold.woff') format('woff'),
+		url('../fonts/Druk Text Wide Bold/DrukTextWideCyTTBold.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+
+@font-face {
 	font-family: 'Druk Text Wide Heavy';
 	src: url('../fonts/Druk Text Wide Heavy/DrukTextWideCyTTHeavy.eot');
 	src: url('../fonts/Druk Text Wide Heavy/DrukTextWideCyTTHeavy.eot?#iefix') format('embedded-opentype'),
@@ -47,3 +58,44 @@
 	font-weight: 900;
 	font-style: normal;
 }
+
+@font-face {
+    font-family: 'Druk Text Bold';
+    src: url('../fonts/Druk Text Bold/DrukTextCyTTBold.eot');
+    src: url('../fonts/Druk Text Bold/DrukTextCyTTBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Druk Text Bold/DrukTextCyTTBold.woff') format('woff'),
+        url('../fonts/Druk Text Bold/DrukTextCyTTBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Druk Bold';
+    src: url('../fonts/Druk Bold/DrukCyTTBold.eot');
+    src: url('../fonts/Druk Bold/DrukCyTTBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Druk Bold/DrukCyTTBold.woff') format('woff'),
+        url('../fonts/Druk Bold/DrukCyTTBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Druk Text Wide Medium';
+    src: url('../fonts/Druk Text Wide Medium/DrukTextWideCyTTMed.eot');
+    src: url('../fonts/Druk Text Wide Medium/DrukTextWideCyTTMed.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Druk Text Wide Medium/DrukTextWideCyTTMed.woff') format('woff'),
+        url('../fonts/Druk Text Wide Medium/DrukTextWideCyTTMed.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Druk Wide Medium';
+    src: url('../fonts/Druk Wide Medium/DrukWideCyTTMedium.eot');
+    src: url('../fonts/Druk Wide Medium/DrukWideCyTTMedium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Druk Wide Medium/DrukWideCyTTMedium.woff') format('woff'),
+        url('../fonts/Druk Wide Medium/DrukWideCyTTMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
