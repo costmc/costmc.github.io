@@ -141,16 +141,17 @@ $sizes: map-merge((
 //
 // Settings for the `<body>` element.
 
-$body-bg : #E3E8EE !default;
-$body-color : #1B2587 !default;
+$body-bg:                   $white !default;
+$body-color:                $gray-900 !default;
 
 // Links
 //
 // Style anchor elements.
-$link-color : $body-color !default;
-$link-decoration : none !default;
-$link-hover-color: $pink;
-$link-hover-decoration : none !default;
+
+$link-color:                theme-color("primary") !default;
+$link-decoration:           none !default;
+$link-hover-color:          darken($link-color, 15%) !default;
+$link-hover-decoration:     underline !default;
 
 // Paragraphs
 //
@@ -230,7 +231,7 @@ $transition-collapse:         height .35s ease !default;
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
