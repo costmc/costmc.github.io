@@ -41,6 +41,7 @@ a {
 	&:hover, &.hover, &.nav-link:hover {
 		transition: none;
 		fill: $link-hover-color;
+		text-decoration: none;
 		border-bottom-color: rgba($link-hover-color, 30);
 	}
 	u, &.nav-link, &.full {
