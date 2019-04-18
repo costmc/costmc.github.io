@@ -49,10 +49,6 @@ module.exports = (options) => {
       new CopyWebpackPlugin([
         {from: './src/assets/images', to: './assets/images'}
       ]),
-      new CopyWebpackPlugin([{
-      	from: './src/assets/audio',
-      	to: './assets/audio'
-      }]),
       new CopyWebpackPlugin([
         {from: './src/assets/fonts', to: './assets/fonts'}
       ]),
@@ -85,15 +81,6 @@ module.exports = (options) => {
               Path.join(__dirname, 'src', 'pages')
             ]
           }
-        },
-        {
-        	test: /\.mp3$/,
-          loader: 'file-loader',
-          options: {
-              // include: './src/assets/audio', // don't know if need this
-        			name: '[name].[ext]',
-        			outputPath: './assets/audio'
-        		}
         },
         {
           test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
