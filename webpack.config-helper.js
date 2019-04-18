@@ -26,7 +26,8 @@ for (let i = 0; i < pages.length; i++) {
 }
 
 module.exports = (options) => {
-  const dest = Path.join(__dirname, 'dist');
+  const dest = Path.join(__dirname, '');
+  // const dest = Path.join(__dirname, 'dist');
 
   let webpackConfig = {
     devtool: options.devtool,
