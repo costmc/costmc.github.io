@@ -1,0 +1,55 @@
+.track {
+	@extend .btn;
+	@extend .btn-secondary;
+
+	padding: .8rem 1rem;
+	cursor: default;
+
+	&__name {
+		margin-bottom: 1rem;
+	}
+
+	@include media-breakpoint-down(md) {
+		padding: .4rem;
+
+		&__name {
+			font-size: .6rem;
+			margin-bottom: .3rem;
+		}
+	}
+
+    .control {
+        &__play {
+            width: 1.5rem;
+            margin-right: .3rem;
+        }
+        &__pause {
+            width: 1.1rem;
+            margin-right: .7rem;
+        }
+    }
+
+	.progress {
+		width: 100%;
+
+		&__bar {
+			// width: 25%;
+			transition: all 200ms ease-out;
+		}
+
+		@include media-breakpoint-down(md) {
+			height: 1.5px;
+		}
+	}
+}
+
+.control {
+	&__play {
+		stroke-width: 1.5px;
+	}
+
+	&__pause {
+		stroke: none;
+		stroke-width: 0;
+	}
+}

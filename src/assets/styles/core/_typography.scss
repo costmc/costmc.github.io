@@ -1,0 +1,30 @@
+h1 {
+	font-weight: 200;
+	@include media-breakpoint-down(md) {
+		font-size: 4rem;
+	}
+}
+
+h3 {
+	@include media-breakpoint-down(md) {
+		font-size: 1.7rem;
+	}
+}
+
+h4, .h4{
+	@include media-breakpoint-down(md) {
+		font-size: .83rem;
+	}
+}
+
+h2 {
+	font-weight: $font-weight-light;
+}
+
+h6 {
+	font-weight: $font-weight-medium;
+}
+
+.lead {
+	line-height: 1rem;
+}

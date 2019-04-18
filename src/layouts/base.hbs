@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <title>{{ htmlWebpackPlugin.options.title }}</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+
+  <meta property="og:title" content="Влад Мд Голам">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/1.jpg">
+  <meta property="og:url" content="https://mdgolam.github.io">
+  <meta property="og:description" content="{{ htmlWebpackPlugin.options.description }}">
+  <meta property="og:site_name" content="Влад Мд Голам">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="article:author" content="Md Golam Vlad">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Влад Мд Голам — сайт">
+  <meta name="twitter:description" content="{{ htmlWebpackPlugin.options.description }}">
+  <meta name="twitter:image:src" content="assets/img/1.jpg">
+  <meta name="twitter:url" content="http://mdgolam.github.io">
+  <meta name="twitter:domain" content="github.io">
+  <meta name="twitter:site" content="@mdgolam.github.io">
+  <meta name="twitter:creator" content="@vladmdgolam">
+
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <link rel="manifest" href="manifest.json">
+
+</head>
+
+<body class="{{bodyclass}}" id="main">
+  {{> @partial-block }}
+</body>
+
+</html>

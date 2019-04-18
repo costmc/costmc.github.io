@@ -1,0 +1,79 @@
+.loop {
+	cursor: default;
+	flex: 0 0 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 3.5rem;
+
+	&>h4 {
+		font-weight: 400;
+		margin-top: 2.2rem;
+
+		@include media-breakpoint-down(md) {
+			margin-top: .9rem;
+		}
+	}
+
+	&__image {
+		width: 4.25rem;
+
+		&_smaller {
+			width: 3.5rem;
+		}
+
+		@include media-breakpoint-down(md) {
+			width: 2.6rem;
+
+			&_smaller {
+				width: 1.6rem;
+			}
+		}
+	}
+
+	&__control {
+		transition: all 200ms ease-out;
+		padding-bottom: 7px;
+		border-bottom: 2px solid transparent;
+		line-height: 1;
+
+		.control__play {
+			width: .8rem;
+			stroke: rgba($color: #fff, $alpha: .3);
+			stroke-width: 2px;
+		}
+
+		.control__pause {
+			width: .7rem;
+			margin-right: .1rem;
+		}
+
+		svg {
+			transition: all 200ms ease-out;
+			margin-bottom: .15rem;
+		}
+
+		&:hover,
+		&_active {
+			color: $white;
+
+			svg {
+				stroke: $white;
+			}
+
+			border-bottom: 2px solid $primary;
+		}
+
+		@include media-breakpoint-down(md) {
+			font-size: .6rem;
+
+			svg.play-icon {
+				width: .6rem;
+			}
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		margin-bottom: 1.9rem;
+	}
+}

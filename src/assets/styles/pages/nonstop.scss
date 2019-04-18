@@ -1,0 +1,25 @@
+body.nonstop {
+    // font-size: 20px;
+    
+    h4 {
+        color: #303030;
+        font-size: 35px;
+        line-height: 1.5;
+        margin: 55px 0;
+        @include media-breakpoint-down(md) {
+            font-size: .83rem;
+        }
+    }
+
+    .nav-main {
+        .name {
+            color: black;
+        }
+        a.nav-link {
+            color: black;
+            &:hover {
+                color: $gray-800;
+            }
+        }
+    }
+}
