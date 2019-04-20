@@ -5,7 +5,7 @@ const Webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const ExtractSASS = new ExtractTextPlugin('./[name].[hash].css');
+const ExtractSASS = new ExtractTextPlugin('./assets/[name].[hash].css');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const PresetReact = require('babel-preset-react');
@@ -27,7 +27,6 @@ for (let i = 0; i < pages.length; i++) {
 
 module.exports = (options) => {
   const dest = Path.join(__dirname, '');
-  // const dest = Path.join(__dirname, 'dist');
 
   let webpackConfig = {
     devtool: options.devtool,
@@ -38,14 +37,6 @@ module.exports = (options) => {
       filename: './assets/scripts/[name].[hash].js'
     },
     plugins: [
-      new Webpack.ProvidePlugin({
-        $: 'jquery',
-        jQuery: 'jquery',
-        'window.jQuery': 'jquery',
-        Tether: 'tether',
-        'window.Tether': 'tether',
-        Popper: ['popper.js', 'default'],
-      }),
       new CopyWebpackPlugin([
         {from: './src/assets/images', to: './assets/images'}
       ]),
@@ -60,14 +51,6 @@ module.exports = (options) => {
     ],
     module: {
       rules: [
-        {
-          test: /\.js$/,
-          exclude: /node_modules/,
-          loader: 'babel-loader',
-          query: {
-          	presets: ["@babel/preset-env", '@babel/react']
-          }
-        },
         {
           test: /\.hbs$/,
           loader: 'handlebars-loader',
@@ -116,12 +99,6 @@ module.exports = (options) => {
             			quality: '65-90',
             			speed: 4
             		},
-            		// gufsicle: {
-            		// 	interlaced: false,
-            		// },
-            		// webp: {
-            		// 	quality: 75
-            		// }
             	}
           }]
         }
@@ -131,10 +108,6 @@ module.exports = (options) => {
 
   if (options.isProduction) {
     webpackConfig.entry = ['./src/app.js'];
-
-    // webpackConfig.output.publicPath = "https://s3.eu-west-3.amazonaws.com/rrk-apps.com/";
-    // buttons don't work this way
-    
     webpackConfig.plugins.push(
       ExtractSASS,
       new CleanWebpackPlugin(['dist'], {
@@ -169,21 +142,15 @@ module.exports = (options) => {
     });
 
     webpackConfig.devServer = {
-      // output: {
-      //     path: dest,
-      //     publicPath: dest
-      // },
       port: options.port,
       contentBase: dest,
+      noInfo: true,
       historyApiFallback: true,
       compress: options.isProduction,
       inline: !options.isProduction,
       hot: !options.isProduction,
       disableHostCheck: true,
       stats: 'errors-only',
-      stats: {
-        // chunks: false
-      }
     };
 
     webpackConfig.plugins.push(

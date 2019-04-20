@@ -74,7 +74,14 @@ a {
 
 .networks {
 	flex-shrink: 0.9;
-	
+
+	a {
+		flex-basis: 0;
+		width: 100%;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+
 	.nav-link {
 		@include media-breakpoint-down(xs) {
 			padding: 0.5em 0.5em 0 0.5em;
