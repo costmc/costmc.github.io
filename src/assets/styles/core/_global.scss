@@ -1,6 +1,5 @@
 html,
 body {
-	height: 100%;
 	@media (prefers-color-scheme: dark) {
 		background-color: black;
 		color: $blue;
@@ -11,6 +10,24 @@ body {
 			fill: $blue;
 		}
 	}
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+}
+
+h1 {
+	@include media-breakpoint-down(md) {
+			font-size: 2.6rem;
+		}
+
+		@include media-breakpoint-down(sm) {
+			font-size: 1.6rem;
+		}
 }
 
 h2 {
