@@ -38,7 +38,7 @@ $blue: #119dff !default;
 $indigo: #6610f2 !default;
 $purple: #6f42c1 !default;
 $pink: #e83e8c !default;
-$red: #dc3545 !default;
+$red: #e83e4c !default;
 $orange: #fd7e14 !default;
 $yellow: #ffc107 !default;
 $green: #28a745 !default;
@@ -66,7 +66,7 @@ $colors: map-merge(
 	$colors
 );
 
-$primary: $blue !default;
+$primary: $red;
 $secondary: $gray-600 !default;
 $success: $green !default;
 $info: $cyan !default;
@@ -167,7 +167,7 @@ $sizes: map-merge(
 // Settings for the `<body>` element.
 
 $body-bg: #fff !default;
-$body-color: $pink !default;
+$body-color: $primary !default;
 
 // Links
 //
@@ -175,7 +175,7 @@ $body-color: $pink !default;
 
 $link-color: $body-color;
 $link-decoration: none;
-$link-hover-color: hsl(332, 79%, 28%);
+$link-hover-color: darken($link-color, 15%);
 $link-hover-decoration: none;
 // Darken percentage for links with `.text-*` class (e.g. `.text-success`)
 $emphasized-link-hover-darken-percentage: 15% !default;
