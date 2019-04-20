@@ -110,7 +110,7 @@ module.exports = (options) => {
     webpackConfig.entry = ['./src/app.js'];
     webpackConfig.plugins.push(
       ExtractSASS,
-      new CleanWebpackPlugin(['dist'], {
+      new CleanWebpackPlugin(['assets'], {
         verbose: true,
         dry: false
       })
