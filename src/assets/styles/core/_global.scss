@@ -68,8 +68,12 @@ a {
 	}
 }
 
+.leads {
+	flex-shrink: 0.6;
+}
+
 .nav {
-	flex-shrink: 0.8;
+	flex-shrink: 0.9;
 
 	.nav-link {
 		@include media-breakpoint-down(xs) {
