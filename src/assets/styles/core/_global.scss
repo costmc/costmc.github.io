@@ -39,6 +39,12 @@ u {
 	text-decoration: none;
 }
 
+.icon {
+	height: 1rem;
+	width: 1rem;
+	fill: inherit;
+}
+
 a {
 	transition: all 0.33s ease-out;
 	fill: $link-color;
@@ -56,11 +62,6 @@ a {
 		transition: none;
 		fill: rgba($link-hover-color, 30);
 		border-bottom-color: rgba($link-hover-color, 30);
-	}
-
-	.icon {
-		height: 1rem;
-		width: 1rem;
 	}
 
 	span {
