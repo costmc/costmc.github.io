@@ -39,12 +39,6 @@ u {
 	text-decoration: none;
 }
 
-.icon {
-	height: 1rem;
-	width: 1rem;
-	fill: inherit;
-}
-
 a {
 	transition: all 0.33s ease-out;
 	fill: $link-color;
@@ -71,6 +65,12 @@ a {
 
 .leads {
 	flex-shrink: 0.6;
+	fill: $link-color;
+
+	.icon {
+		height: 1rem;
+		width: 1rem;
+	}
 }
 
 .networks {
